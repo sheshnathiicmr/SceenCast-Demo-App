@@ -34,6 +34,7 @@
 		2B201B4A21C7D9C30028593C /* WebRTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		2B201B4B21C7D9C30028593C /* RTCIceCandidate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCIceCandidate+JSON.swift"; sourceTree = "<group>"; };
 		2B201B4C21C7D9C30028593C /* RTCSessionDescription+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCSessionDescription+JSON.swift"; sourceTree = "<group>"; };
+		2BD2B54721D0ADAA00D1B4CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		716BEB77CA9777E52CD07EE6 /* Pods-CommonPod-ScreenCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-ScreenCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-ScreenCast/Pods-CommonPod-ScreenCast.debug.xcconfig"; sourceTree = "<group>"; };
 		A9BDB9C0BDAF6682D6EA04A2 /* Pods-CommonPod-ScreenCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-ScreenCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-ScreenCast/Pods-CommonPod-ScreenCast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +63,7 @@
 		2B201B2A21C7D8E20028593C = {
 			isa = PBXGroup;
 			children = (
+				2BD2B54721D0ADAA00D1B4CF /* README.md */,
 				2B201B3521C7D8E20028593C /* ScreenCast */,
 				2B201B3421C7D8E20028593C /* Products */,
 				15E8143E3835AAD4A3801E72 /* Pods */,
