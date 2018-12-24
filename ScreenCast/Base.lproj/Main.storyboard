@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScreenCast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7a1-nP-02a">
+                                <rect key="frame" x="16" y="146" width="30" height="30"/>
+                                <state key="normal" title="Call "/>
+                                <connections>
+                                    <action selector="buttonConnectPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWN-oK-XHG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIT-zP-kGO">
+                                <rect key="frame" x="16" y="75" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0J-0z-8Zf">
+                                <rect key="frame" x="16" y="219" width="81" height="30"/>
+                                <state key="normal" title="Recieve call"/>
+                                <connections>
+                                    <action selector="buttonRecieveCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jj5-w7-28k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylo-9X-03j">
+                                <rect key="frame" x="16" y="305" width="81" height="30"/>
+                                <state key="normal" title="Show Video"/>
+                                <connections>
+                                    <action selector="showvideoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePY-h2-5Jx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S0J-0z-8Zf" firstAttribute="leading" secondItem="7a1-nP-02a" secondAttribute="leading" id="4qM-d1-ORI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7a1-nP-02a" secondAttribute="trailing" symbolic="YES" id="4zT-d2-o4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UIT-zP-kGO" secondAttribute="trailing" symbolic="YES" id="DAe-qn-HtH"/>
+                            <constraint firstItem="UIT-zP-kGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Fjh-6S-BLa"/>
+                            <constraint firstItem="7a1-nP-02a" firstAttribute="leading" secondItem="UIT-zP-kGO" secondAttribute="leading" id="H1z-iS-skq"/>
+                            <constraint firstItem="ylo-9X-03j" firstAttribute="leading" secondItem="S0J-0z-8Zf" secondAttribute="leading" id="J83-h4-Ja1"/>
+                            <constraint firstItem="UIT-zP-kGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QBn-tH-3s3"/>
+                            <constraint firstItem="ylo-9X-03j" firstAttribute="trailing" secondItem="S0J-0z-8Zf" secondAttribute="trailing" id="RY3-EJ-85i"/>
+                            <constraint firstItem="7a1-nP-02a" firstAttribute="top" secondItem="UIT-zP-kGO" secondAttribute="bottom" constant="50" id="THU-2L-xJr"/>
+                            <constraint firstItem="ylo-9X-03j" firstAttribute="top" secondItem="S0J-0z-8Zf" secondAttribute="bottom" constant="56" id="cUB-MX-pxz"/>
+                            <constraint firstItem="S0J-0z-8Zf" firstAttribute="top" secondItem="7a1-nP-02a" secondAttribute="bottom" constant="43" id="g8e-yP-vvm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="signalingStatusLabel" destination="UIT-zP-kGO" id="8XJ-9P-Bgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
