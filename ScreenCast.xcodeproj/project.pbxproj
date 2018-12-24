@@ -24,7 +24,9 @@
 		2BD2B55D21D0B2AB00D1B4CF /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2B55C21D0B2AB00D1B4CF /* BroadcastSetupViewController.swift */; };
 		2BD2B56121D0B2AB00D1B4CF /* BroadcastUploadSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2BD2B55721D0B2AB00D1B4CF /* BroadcastUploadSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2BD2B56421D0B2AB00D1B4CF /* BroadcastUpload.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2BD2B54C21D0B2AB00D1B4CF /* BroadcastUpload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5689CE87A1970DD4A1837AA0 /* Pods_CommonPod_BroadcastUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6737E9D9C02AA73291CC999D /* Pods_CommonPod_BroadcastUpload.framework */; };
 		6C64C9DDCC7F2C912D1F9DEA /* Pods_CommonPod_ScreenCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115FA1ABFB821CF2E06489CA /* Pods_CommonPod_ScreenCast.framework */; };
+		ADCDC4560D7CFDE06B26A922 /* Pods_CommonPod_BroadcastUploadSetupUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EFDA4DC2385F89182993AD /* Pods_CommonPod_BroadcastUploadSetupUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +84,14 @@
 		2BD2B55921D0B2AB00D1B4CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BD2B55C21D0B2AB00D1B4CF /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
 		2BD2B55E21D0B2AB00D1B4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6737E9D9C02AA73291CC999D /* Pods_CommonPod_BroadcastUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_BroadcastUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		716BEB77CA9777E52CD07EE6 /* Pods-CommonPod-ScreenCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-ScreenCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-ScreenCast/Pods-CommonPod-ScreenCast.debug.xcconfig"; sourceTree = "<group>"; };
+		A2DB63C6878EA9BD8E68DAE7 /* Pods-CommonPod-BroadcastUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-BroadcastUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-BroadcastUpload/Pods-CommonPod-BroadcastUpload.debug.xcconfig"; sourceTree = "<group>"; };
 		A9BDB9C0BDAF6682D6EA04A2 /* Pods-CommonPod-ScreenCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-ScreenCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-ScreenCast/Pods-CommonPod-ScreenCast.release.xcconfig"; sourceTree = "<group>"; };
+		B6EFDA4DC2385F89182993AD /* Pods_CommonPod_BroadcastUploadSetupUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_BroadcastUploadSetupUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB598E81CE39DAA0D6E1F0D /* Pods-CommonPod-BroadcastUploadSetupUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-BroadcastUploadSetupUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-BroadcastUploadSetupUI/Pods-CommonPod-BroadcastUploadSetupUI.release.xcconfig"; sourceTree = "<group>"; };
+		BC4B0F28CBB1143A3CC49A32 /* Pods-CommonPod-BroadcastUploadSetupUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-BroadcastUploadSetupUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-BroadcastUploadSetupUI/Pods-CommonPod-BroadcastUploadSetupUI.debug.xcconfig"; sourceTree = "<group>"; };
+		E52BDA71970AA2CB2947DB0E /* Pods-CommonPod-BroadcastUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-BroadcastUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-BroadcastUpload/Pods-CommonPod-BroadcastUpload.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD2B54E21D0B2AB00D1B4CF /* ReplayKit.framework in Frameworks */,
+				5689CE87A1970DD4A1837AA0 /* Pods_CommonPod_BroadcastUpload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +118,7 @@
 			files = (
 				2BD2B55821D0B2AB00D1B4CF /* ReplayKit.framework in Frameworks */,
 				2BD2B55A21D0B2AB00D1B4CF /* UIKit.framework in Frameworks */,
+				ADCDC4560D7CFDE06B26A922 /* Pods_CommonPod_BroadcastUploadSetupUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +130,10 @@
 			children = (
 				716BEB77CA9777E52CD07EE6 /* Pods-CommonPod-ScreenCast.debug.xcconfig */,
 				A9BDB9C0BDAF6682D6EA04A2 /* Pods-CommonPod-ScreenCast.release.xcconfig */,
+				A2DB63C6878EA9BD8E68DAE7 /* Pods-CommonPod-BroadcastUpload.debug.xcconfig */,
+				E52BDA71970AA2CB2947DB0E /* Pods-CommonPod-BroadcastUpload.release.xcconfig */,
+				BC4B0F28CBB1143A3CC49A32 /* Pods-CommonPod-BroadcastUploadSetupUI.debug.xcconfig */,
+				BBB598E81CE39DAA0D6E1F0D /* Pods-CommonPod-BroadcastUploadSetupUI.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,6 +203,8 @@
 				115FA1ABFB821CF2E06489CA /* Pods_CommonPod_ScreenCast.framework */,
 				2BD2B54D21D0B2AB00D1B4CF /* ReplayKit.framework */,
 				2BD2B55921D0B2AB00D1B4CF /* UIKit.framework */,
+				6737E9D9C02AA73291CC999D /* Pods_CommonPod_BroadcastUpload.framework */,
+				B6EFDA4DC2385F89182993AD /* Pods_CommonPod_BroadcastUploadSetupUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD2B56821D0B2AB00D1B4CF /* Build configuration list for PBXNativeTarget "BroadcastUpload" */;
 			buildPhases = (
+				E9AA1E94064738450FDFD2DF /* [CP] Check Pods Manifest.lock */,
 				2BD2B54821D0B2AB00D1B4CF /* Sources */,
 				2BD2B54921D0B2AB00D1B4CF /* Frameworks */,
 				2BD2B54A21D0B2AB00D1B4CF /* Resources */,
@@ -239,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD2B56521D0B2AB00D1B4CF /* Build configuration list for PBXNativeTarget "BroadcastUploadSetupUI" */;
 			buildPhases = (
+				5759EDE6EA50B8BEEAE0D8F1 /* [CP] Check Pods Manifest.lock */,
 				2BD2B55321D0B2AB00D1B4CF /* Sources */,
 				2BD2B55421D0B2AB00D1B4CF /* Frameworks */,
 				2BD2B55521D0B2AB00D1B4CF /* Resources */,
@@ -321,6 +339,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5759EDE6EA50B8BEEAE0D8F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonPod-BroadcastUploadSetupUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9C99C560DE4008C940858F33 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +389,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CommonPod-ScreenCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AA1E94064738450FDFD2DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonPod-BroadcastUpload-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -588,9 +642,11 @@
 		};
 		2BD2B56621D0B2AB00D1B4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4B0F28CBB1143A3CC49A32 /* Pods-CommonPod-BroadcastUploadSetupUI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCG5L7466G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BroadcastUploadSetupUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -608,9 +664,11 @@
 		};
 		2BD2B56721D0B2AB00D1B4CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB598E81CE39DAA0D6E1F0D /* Pods-CommonPod-BroadcastUploadSetupUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCG5L7466G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BroadcastUploadSetupUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,9 +686,11 @@
 		};
 		2BD2B56921D0B2AB00D1B4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2DB63C6878EA9BD8E68DAE7 /* Pods-CommonPod-BroadcastUpload.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCG5L7466G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BroadcastUpload/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,9 +708,11 @@
 		};
 		2BD2B56A21D0B2AB00D1B4CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52BDA71970AA2CB2947DB0E /* Pods-CommonPod-BroadcastUpload.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCG5L7466G;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BroadcastUpload/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

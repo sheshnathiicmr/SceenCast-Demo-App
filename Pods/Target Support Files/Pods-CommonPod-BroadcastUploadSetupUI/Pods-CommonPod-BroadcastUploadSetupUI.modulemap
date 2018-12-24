@@ -1,0 +1,6 @@
+framework module Pods_CommonPod_BroadcastUploadSetupUI {
+  umbrella header "Pods-CommonPod-BroadcastUploadSetupUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
