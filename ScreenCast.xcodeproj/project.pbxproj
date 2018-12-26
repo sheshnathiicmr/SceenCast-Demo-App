@@ -19,6 +19,14 @@
 		2B201B5121C7D9C30028593C /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4C21C7D9C30028593C /* RTCSessionDescription+JSON.swift */; };
 		2B37D7F021D34F890023B0E8 /* PeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37D7EF21D34F890023B0E8 /* PeerManager.swift */; };
 		2B37D7F121D34F890023B0E8 /* PeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37D7EF21D34F890023B0E8 /* PeerManager.swift */; };
+		2B37D7FE21D3509F0023B0E8 /* SignalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4821C7D9C30028593C /* SignalClient.swift */; };
+		2B37D7FF21D350A00023B0E8 /* SignalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4821C7D9C30028593C /* SignalClient.swift */; };
+		2B37D80021D350B40023B0E8 /* RTCIceCandidate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4B21C7D9C30028593C /* RTCIceCandidate+JSON.swift */; };
+		2B37D80121D350B40023B0E8 /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4C21C7D9C30028593C /* RTCSessionDescription+JSON.swift */; };
+		2B37D80221D350B50023B0E8 /* RTCIceCandidate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4B21C7D9C30028593C /* RTCIceCandidate+JSON.swift */; };
+		2B37D80321D350B50023B0E8 /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B201B4C21C7D9C30028593C /* RTCSessionDescription+JSON.swift */; };
+		2B37D80521D350F30023B0E8 /* WebRTCClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37D80421D350F30023B0E8 /* WebRTCClientExtension.swift */; };
+		2B37D80621D350F30023B0E8 /* WebRTCClientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37D80421D350F30023B0E8 /* WebRTCClientExtension.swift */; };
 		2BD2B54E21D0B2AB00D1B4CF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD2B54D21D0B2AB00D1B4CF /* ReplayKit.framework */; };
 		2BD2B55121D0B2AB00D1B4CF /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2B55021D0B2AB00D1B4CF /* SampleHandler.swift */; };
 		2BD2B55821D0B2AB00D1B4CF /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD2B54D21D0B2AB00D1B4CF /* ReplayKit.framework */; };
@@ -78,6 +86,7 @@
 		2B201B4B21C7D9C30028593C /* RTCIceCandidate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCIceCandidate+JSON.swift"; sourceTree = "<group>"; };
 		2B201B4C21C7D9C30028593C /* RTCSessionDescription+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCSessionDescription+JSON.swift"; sourceTree = "<group>"; };
 		2B37D7EF21D34F890023B0E8 /* PeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerManager.swift; sourceTree = "<group>"; };
+		2B37D80421D350F30023B0E8 /* WebRTCClientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClientExtension.swift; sourceTree = "<group>"; };
 		2BD2B54721D0ADAA00D1B4CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2BD2B54C21D0B2AB00D1B4CF /* BroadcastUpload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUpload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2B54D21D0B2AB00D1B4CF /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
@@ -190,12 +199,21 @@
 			path = HelperClass;
 			sourceTree = "<group>";
 		};
+		2B37D7FD21D350270023B0E8 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				2B37D7EF21D34F890023B0E8 /* PeerManager.swift */,
+				2B37D80421D350F30023B0E8 /* WebRTCClientExtension.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
 		2BD2B54F21D0B2AB00D1B4CF /* BroadcastUpload */ = {
 			isa = PBXGroup;
 			children = (
 				2BD2B55021D0B2AB00D1B4CF /* SampleHandler.swift */,
 				2BD2B55221D0B2AB00D1B4CF /* Info.plist */,
-				2B37D7EF21D34F890023B0E8 /* PeerManager.swift */,
+				2B37D7FD21D350270023B0E8 /* HelperClass */,
 			);
 			path = BroadcastUpload;
 			sourceTree = "<group>";
@@ -447,6 +465,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD2B55121D0B2AB00D1B4CF /* SampleHandler.swift in Sources */,
+				2B37D80521D350F30023B0E8 /* WebRTCClientExtension.swift in Sources */,
+				2B37D80021D350B40023B0E8 /* RTCIceCandidate+JSON.swift in Sources */,
+				2B37D80121D350B40023B0E8 /* RTCSessionDescription+JSON.swift in Sources */,
+				2B37D7FE21D3509F0023B0E8 /* SignalClient.swift in Sources */,
 				2B37D7F021D34F890023B0E8 /* PeerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD2B55D21D0B2AB00D1B4CF /* BroadcastSetupViewController.swift in Sources */,
+				2B37D80621D350F30023B0E8 /* WebRTCClientExtension.swift in Sources */,
+				2B37D80221D350B50023B0E8 /* RTCIceCandidate+JSON.swift in Sources */,
+				2B37D80321D350B50023B0E8 /* RTCSessionDescription+JSON.swift in Sources */,
+				2B37D7FF21D350A00023B0E8 /* SignalClient.swift in Sources */,
 				2B37D7F121D34F890023B0E8 /* PeerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

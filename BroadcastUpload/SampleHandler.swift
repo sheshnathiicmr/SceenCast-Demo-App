@@ -12,7 +12,8 @@ import WebRTC
 class SampleHandler: RPBroadcastSampleHandler {
 
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
-        // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional. 
+        // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
+        PeerManager.shared.requestForConnectWithPeer()
     }
     
     override func broadcastPaused() {
@@ -31,24 +32,14 @@ class SampleHandler: RPBroadcastSampleHandler {
         switch sampleBufferType {
             case RPSampleBufferType.video:
                 // Handle video sample buffer
-                
-                /*let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
-                CVPixelBufferLockBaseAddress(imageBuffer!, CVPixelBufferLockFlags(rawValue: 0))
-                let bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer!)
-                let height = CVPixelBufferGetHeight(imageBuffer!)
-                let src_buff = CVPixelBufferGetBaseAddress(imageBuffer!)
-                let data = NSData(bytes: src_buff, length: bytesPerRow * height)
-                CVPixelBufferUnlockBaseAddress(imageBuffer!, CVPixelBufferLockFlags(rawValue: 0))*/
-                
-                // Handle video sample buffer
                 guard let imageBuffer: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
                     break
                 }
-                let pixelFormat = CVPixelBufferGetPixelFormatType(imageBuffer) // kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
+                //let pixelFormat = CVPixelBufferGetPixelFormatType(imageBuffer) // kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
                 let timeStampNs: Int64 = Int64(CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sampleBuffer)) * 1000000000)
                 let rtcPixlBuffer = RTCCVPixelBuffer(pixelBuffer: imageBuffer)
                 let rtcVideoFrame = RTCVideoFrame(buffer: rtcPixlBuffer, rotation: ._0, timeStampNs: timeStampNs)
-                
+                PeerManager.shared.push(videoFrame: rtcVideoFrame)
                 break
             case RPSampleBufferType.audioApp:
                 // Handle audio sample buffer for app audio
@@ -58,4 +49,6 @@ class SampleHandler: RPBroadcastSampleHandler {
                 break
         }
     }
+    
+    
 }
