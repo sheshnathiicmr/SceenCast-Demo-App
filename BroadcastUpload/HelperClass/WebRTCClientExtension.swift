@@ -89,13 +89,13 @@ class WebRTCClient: NSObject {
     }
     
     func push(videoFrame: RTCVideoFrame) {
-        if peerConnection.connectionState == .connected {
+        //if peerConnection.connectionState == .connected {
             if let videoSource = self.videoSource {
                 if let videoCapturer = self.videoCapturer {
                     videoSource.capturer(videoCapturer, didCapture: videoFrame)
                 }
             }
-        }
+        //}
     }
     
     func renderRemoteVideo(to renderer: RTCVideoRenderer) {

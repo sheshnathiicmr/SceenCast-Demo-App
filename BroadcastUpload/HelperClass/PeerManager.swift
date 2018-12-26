@@ -21,10 +21,7 @@ class PeerManager: NSObject {
         self.webRTCClient.delegate = self
         self.signalClient.delegate = self
         
-        self.webRTCClient.offer { (sdp) in
-            //self.hasLocalSdp = true
-            self.signalClient.send(sdp: sdp)
-        }
+        
     }
     
     func answerPeerRequestForConnect() -> Void {
@@ -44,6 +41,10 @@ class PeerManager: NSObject {
 extension PeerManager: SignalClientDelegate {
     func signalClientDidConnect(_ signalClient: SignalClient) {
         //self.signalingConnected = true
+        self.webRTCClient.offer { (sdp) in
+            //self.hasLocalSdp = true
+            self.signalClient.send(sdp: sdp)
+        }
     }
     
     func signalClientDidDisconnect(_ signalClient: SignalClient) {

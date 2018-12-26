@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BroadcastUpload/SampleHandler.swift"
-            timestampString = "567502037.556703"
+            timestampString = "567511185.295766"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScreenCast/ViewController.swift"
-            timestampString = "567501870.027678"
+            timestampString = "567511185.295889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScreenCast/ViewController.swift"
-            timestampString = "567501870.028262"
+            timestampString = "567511185.295979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BroadcastUpload/HelperClass/PeerManager.swift"
-            timestampString = "567502037.556957"
+            timestampString = "567511185.2960629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "signalClientDidConnect(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,45 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BroadcastUpload/HelperClass/PeerManager.swift"
-            timestampString = "567502037.5576119"
+            timestampString = "567511185.29615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "signalClient(_:didReceiveRemoteSdp:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BroadcastUpload.PeerManager.signalClient(_: BroadcastUpload.SignalClient, didReceiveRemoteSdp: __C.RTCSessionDescription) -&gt; ()"
-                  moduleName = "BroadcastUpload"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sheshnathkumar/Desktop/ScreenCast/BroadcastUpload/HelperClass/PeerManager.swift"
-                  timestampString = "567502037.724565"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "240">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BroadcastUpload.PeerManager.signalClient(_: BroadcastUpload.SignalClient, didReceiveRemoteSdp: __C.RTCSessionDescription) -&gt; ()"
-                  moduleName = "BroadcastUpload"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sheshnathkumar/Desktop/ScreenCast/BroadcastUpload/HelperClass/PeerManager.swift"
-                  timestampString = "567502037.726658"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,12 +90,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BroadcastUpload/SampleHandler.swift"
-            timestampString = "567502037.558264"
+            timestampString = "567511185.296231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "processSampleBuffer(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BroadcastUpload/HelperClass/PeerManager.swift"
+            timestampString = "567511185.296313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "answerPeerRequestForConnect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BroadcastUpload/HelperClass/PeerManager.swift"
+            timestampString = "567511185.296388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "signalClientDidConnect(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
