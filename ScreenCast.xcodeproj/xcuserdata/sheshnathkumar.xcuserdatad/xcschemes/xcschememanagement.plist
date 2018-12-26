@@ -7,7 +7,7 @@
 		<key>BroadcastUpload.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>BroadcastUploadSetupUI.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>ScreenCast.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 </dict>
