@@ -8,6 +8,7 @@
 
 import UIKit
 import WebRTC
+import ReplayKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var signalingStatusLabel: UILabel!
@@ -58,6 +59,22 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func buttonShowRecorderPressed(_ sender: Any) {
+        if #available(iOS 11.0, *) {
+            RPBroadcastActivityViewController.load { (broadcastViewController, error) in
+                guard let broadcastActivityViewController = broadcastViewController else {
+                    return
+                }
+                broadcastActivityViewController.delegate = self;
+                self.present(broadcastActivityViewController, animated: true, completion: {
+                    
+                })
+                
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+    }
     
     @IBAction func showvideoPressed(_ sender: Any) {
         //let vc = VideoViewController(webRTCClient: self.webRTCClient)
@@ -102,4 +119,13 @@ extension ViewController: WebRTCClientDelegate {
         self.signalClient.send(candidate: candidate)
         
     }
+}
+
+extension ViewController: RPBroadcastActivityViewControllerDelegate {
+    
+    @available(iOS 10.0, *)
+    func broadcastActivityViewController(_ broadcastActivityViewController: RPBroadcastActivityViewController, didFinishWith broadcastController: RPBroadcastController?, error: Error?) {
+        
+    }
+    
 }

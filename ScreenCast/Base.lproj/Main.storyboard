@@ -45,6 +45,13 @@
                                     <action selector="showvideoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePY-h2-5Jx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tya-r1-gnS">
+                                <rect key="frame" x="16" y="381" width="105" height="30"/>
+                                <state key="normal" title="Show Recorder"/>
+                                <connections>
+                                    <action selector="buttonShowRecorderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNP-9A-07m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -59,6 +66,9 @@
                             <constraint firstItem="7a1-nP-02a" firstAttribute="top" secondItem="UIT-zP-kGO" secondAttribute="bottom" constant="50" id="THU-2L-xJr"/>
                             <constraint firstItem="ylo-9X-03j" firstAttribute="top" secondItem="S0J-0z-8Zf" secondAttribute="bottom" constant="56" id="cUB-MX-pxz"/>
                             <constraint firstItem="S0J-0z-8Zf" firstAttribute="top" secondItem="7a1-nP-02a" secondAttribute="bottom" constant="43" id="g8e-yP-vvm"/>
+                            <constraint firstItem="Tya-r1-gnS" firstAttribute="top" secondItem="ylo-9X-03j" secondAttribute="bottom" constant="46" id="h1u-Ar-Shh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tya-r1-gnS" secondAttribute="trailing" symbolic="YES" id="jax-ky-j4y"/>
+                            <constraint firstItem="Tya-r1-gnS" firstAttribute="leading" secondItem="ylo-9X-03j" secondAttribute="leading" id="jjM-Jk-ugT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
