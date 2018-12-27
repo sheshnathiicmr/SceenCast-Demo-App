@@ -3,7 +3,7 @@
 //  ScreenCastDemoApp
 //
 //  Created by Sheshnath Kumar on 13/12/18.
-//  Copyright © 2018 ProMobi Technologies. All rights reserved.
+//  Copyright © 2018 Demo Technologies. All rights reserved.
 //
 
 import UIKit

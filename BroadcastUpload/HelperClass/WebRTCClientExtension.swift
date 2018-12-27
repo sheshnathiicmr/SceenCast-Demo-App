@@ -129,9 +129,14 @@ class WebRTCClient: NSObject {
         let videoSource = self.factory.videoSource()
         self.videoSource = videoSource
         self.videoCapturer = RTCVideoCapturer(delegate: videoSource)
+        self.videoSource?.adaptOutputFormat(toWidth: 441, height: 736, fps: 15)
         let videoTrack = self.factory.videoTrack(with: videoSource, trackId: "video0")
         
         return videoTrack
+    }
+    
+    func setVideoFormat(width:Int32,height:Int32, fps:Int32) -> Void {
+        self.videoSource?.adaptOutputFormat(toWidth: width, height: height, fps: fps)
     }
     
     private func setAudioEnabled(_ isEnabled: Bool) {

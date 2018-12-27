@@ -3,7 +3,7 @@
 //  BroadcastUpload
 //
 //  Created by Sheshnath Kumar on 24/12/18.
-//  Copyright © 2018 ProMobi Technologies. All rights reserved.
+//  Copyright © 2018 Demo Technologies. All rights reserved.
 //
 
 import ReplayKit
@@ -35,10 +35,14 @@ class SampleHandler: RPBroadcastSampleHandler {
                 guard let imageBuffer: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
                     break
                 }
+                let width = CVPixelBufferGetWidth(imageBuffer)
+                let height = CVPixelBufferGetHeight(imageBuffer)
+                
                 //let pixelFormat = CVPixelBufferGetPixelFormatType(imageBuffer) // kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
                 let timeStampNs: Int64 = Int64(CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sampleBuffer)) * 1000000000)
                 let rtcPixlBuffer = RTCCVPixelBuffer(pixelBuffer: imageBuffer)
                 let rtcVideoFrame = RTCVideoFrame(buffer: rtcPixlBuffer, rotation: ._0, timeStampNs: timeStampNs)
+                //PeerManager.shared.webRTCClient.setVideoFormat(width: Int32(width), height: Int32(height), fps: Int32(15))
                 PeerManager.shared.push(videoFrame: rtcVideoFrame)
                 break
             case RPSampleBufferType.audioApp:
